@@ -1,0 +1,27 @@
+syntax = "proto3";
+package image.upload;
+
+option go_package = "gen/pb";
+
+service ImageUploadService {
+	rpc Upload(stream ImageUploadRequest) returns (ImageUploadResponse) {}
+}
+
+message ImageUploadRequest {
+	oneof file {
+		FileMeta file_meta = 1;
+		bytes data = 2;
+	}
+
+	message FileMeta {
+		string filename = 1;
+	}
+}
+
+message ImageUploadResponse {
+	string uuid = 1;
+	int32 size = 2;
+	string content_type = 3;
+	string filename = 4;
+}
+
