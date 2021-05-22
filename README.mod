@@ -20,3 +20,7 @@ bundle exec grpc_tools_ruby_protoc \
 	--grpc_out=app/gen/pb/image/upload \
 	../proto/image_upload.proto
 ```
+
+## ソース内の猫の画像について
+フリー素材ぱくたそ（www.pakutaso.com）で配布されている、mi-tetteさんの画像を使用しました
+https://www.pakutaso.com/20200203058post-25990.html
