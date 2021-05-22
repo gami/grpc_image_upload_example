@@ -3,7 +3,7 @@
 - クライアントサイドストリーミングで画像のチャンクドアップロードを行います
 - サーバー側をGo、クライアント側をRubyで実装しています
 
-## how to gen grpc codes
+## Generate grpc codes
 Go
 ```
 protoc \
